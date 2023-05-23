@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <title>Document</title>
 </head>
@@ -11,16 +14,20 @@
 
   <!-- Site Header -->
   <header class="site-header">
-    <div class="container">
+    <div class="container header-container">
+      <a href="index.html">
+        <img class="site-logo" src="img/logo.svg" alt="Logo" width="185" height="50">
+      </a>
       <div class="site-header-links">
-        <img src="img/logo.svg" alt="Logo">
+       <nav>
         <ul class="link-items">
-          <li class="link-item"><a href="#">Xizmatlar</a></li>
-          <li class="link-item"><a href="#">Dorilar</a></li>
-          <li class="link-item"><a href="#">Asal</a></li>
-          <li class="link-item"><a href="#">Kontaktlar</a></li>
-          <li class="link-item"><a href="#">Blog</a></li>
+          <li class="link-item"><a class="site-link" href="#">Xizmatlar</a></li>
+          <li class="link-item"><a  class="site-link"href="#">Dorilar</a></li>
+          <li class="link-item"><a class="site-link" href="#">Asal</a></li>
+          <li class="link-item"><a class="site-link" href="#">Kontaktlar</a></li>
+          <li class="link-item"><a class="site-link" href="#">Blog</a></li>
         </ul>
+       </nav>
          <a href="#" class="main-button">Qabulga yozilish</a>
       </div>
     </div>
@@ -32,92 +39,116 @@
  <main>
   <!-- Hero section  -->
    <section class="hero-section">
-    <div class="container">
+    <div class="container hero-container">
       <div class="hero-content">
         <h2 class="hero-heading">Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.</h2>
         <p class="hero-text">Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan
            kasalliklarni yengishda yordam beradi. Sog’ligingizni o’z ishining professionallariga ishonib topshiring.
           </p>
-          <a href="#">Qabulga yozilish</a>
+          <a href="#" class="main-button">Qabulga yozilish</a>
       </div>
-      <img src="" alt="">
+      <img class="hero-img" src="img/hero-img.png" alt="Image" width="423" height="555" srcset="img/hero-img.png 1x, img/hero-img@2x.png 2x">
+
     </div>
    </section>
    <!-- /Hero section  -->
 
    <!-- Services section  -->
     <div class="services-section">
-      <div class="container">
-        <h2 class="services-title">Xizmatlar</h2>
-
-        <div class="services-item">
-          <img src="img/image1.png" alt="Image" width="200" height="200" srcset="img/image1.png 1x, img/image 1@2x.png 2x">
-          <h3 class="service-heading">Hijoma</h3>
-          <p class="service-text">Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan hadisda rasululloh sallallohu alayhi va sallam dedilar:
-            «Sizlar hijoma qiladigan kunlaringizning eng yaxshisi 17, 19 va 21-kunlardir» (bu kunlar hijrij-kamariy hisobdagi oylar kunlaridir).
-            </p>
+      <div class="container service-container">
+          <h2 class="services-title">Xizmatlar</h2>
+          <div class="service-container">
+          <div class="services-item">
+            <img class="service-img" src="img/image1.png" alt="Image" width="200" height="200" srcset="img/image1.png 1x, img/image1@2x.png 2x">
+            <div class="service-info">
+              <h3 class="service-heading">Hijoma</h3>
+              <p class="service-text">Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan hadisda rasululloh sallallohu alayhi va sallam dedilar:
+                «Sizlar hijoma qiladigan kunlaringizning eng yaxshisi 17, 19 va 21-kunlardir» (bu kunlar hijrij-kamariy hisobdagi oylar kunlaridir).
+                </p>
+            </div>
+          </div>
+          <div class="services-item">
+            <img class="service-img" src="img/image2.png" alt="Image" width="200" height="200" srcset="img/image2.png 1x, img/image1@2x.png 2x">
+            <div class="service-info">
+              <h3 class="service-heading">
+                Manual terapiya
+              </h3>
+              <p class="service-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat,
+                pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.
+              </p>
+            </div>
+          </div>
+          <div class="services-item">
+            <img class="service-img" src="img/image3.png" alt="Image" width="200" height="200" srcset="img/image3.png 1x, img/image1@2x.png 2x">
+            <div class="service-info">
+              <h3 class="service-heading">
+              Zuluk bilan davolash
+              </h3>
+              <p class="service-text">
+                Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία — «davolash») — ma’lum kasalliklarni dorivor zuluklar (Hirudo medicinalis) yordamida davolash usuli. Fizioterapevtik muolaja, muqobil tibbiyotga oid sanaladi.
+                Bunday zuluklar ushbu kichik sinf chuvchalchanglariga oid yagona tur hisoblanadi, qolganlari shifobaxsh ta’sir ko’rsatmaydi.
+              </p>
+            </div>
+          </div>
+          <div class="services-item">
+            <img class="service-img" src="img/image4.png" alt="Image" width="200" height="200" srcset="img/image4.png 1x, img/image 1@2x.png 2x">
+            <div class="service-info">
+              <h3 class="service-heading">
+                Tabiiy dori vositalari
+              </h3>
+              <p class="service-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat,
+                pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="services-item">
-          <img src="img/image2.png" alt="Image" width="200" height="200" srcset="img/image2.png 1x, img/image 1@2x.png 2x">
-          <h3 class="service-heading">
-            Manual terapiya
-          </h3>
-          <p class="service-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat,
-            pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.
-
-          </p>
-        </div>
-        <div class="services-item">
-          <img src="img/image3.png" alt="Image" width="200" height="200" srcset="img/image3.png 1x, img/image 1@2x.png 2x">
-          <h3 class="service-heading">
-          Zuluk bilan davolash
-          </h3>
-          <p class="service-text">
-            Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία — «davolash») — ma’lum kasalliklarni dorivor zuluklar (Hirudo medicinalis) yordamida davolash usuli. Fizioterapevtik muolaja, muqobil tibbiyotga oid sanaladi.
-            Bunday zuluklar ushbu kichik sinf chuvchalchanglariga oid yagona tur hisoblanadi, qolganlari shifobaxsh ta’sir ko’rsatmaydi.
-          </p>
-        </div>
-        <div class="services-item">
-          <img src="img/image4.png" alt="Image" width="200" height="200" srcset="img/image4.png 1x, img/image 1@2x.png 2x">
-          <h3 class="service-heading">
-            Tabiiy dori vositalari
-          </h3>
-          <p class="service-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat,
-            pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.
-          </p>
-        </div>
-        <a href="#" class="main-button">Buyurtma berish</a>
+        <a href="#" class="main-button service-button">Buyurtma berish</a>
       </div>
     </div>
     <!-- /Services section  -->
  </main>
 
- <!-- Footer section  -->
+ <!-- Reception section  -->
 
- <footer class="footer-section">
+ <section class="reception-section">
       <div class="container">
-        <h2 class="footer-title">
-          Qabulga ro'yxatdan o'ting
-        </h2>
-        <a href="#" class="footer-button">Qo'ng'iroq qilish</a>
-        <a href="#" class="footer-button">Telegramga yozish</a>
-
-        <div class="footer-bottom">
-          <img src="img/logo.svg" alt="Logo">
-          <ul class="link-items">
-            <li class="link-item"><a href="#">Xizmatlar</a></li>
-            <li class="link-item"><a href="#">Dorilar</a></li>
-            <li class="link-item"><a href="#">Asal</a></li>
-            <li class="link-item"><a href="#">Kontaktlar</a></li>
-            <li class="link-item"><a href="#">Blog</a></li>
+        <div class="reception-info">
+          <h2 class="reception-title">
+            Qabulga ro'yxatdan o'ting
+          </h2>
+          <ul class="reception-buttons">
+            <li>
+              <a href="#" class="reception-button">Qo'ng'iroq qilish</a>
+            </li>
+            <li>
+              <a href="#" class="reception-button">Telegramga yozish</a>
+            </li>
           </ul>
         </div>
       </div>
- </footer>
+ </section>
 
-<!-- /Footer section -->
+
+<!-- /Reception section -->
+
+<!-- Footer section  -->
+
+<footer class="footer-section">
+  <div class="container footer-container">
+      <img class="footer-logo" src="logo.svg" alt="Logo">
+      <div class="footer-site-links">
+        <ul class="footer-link-items">
+          <li class="footer-link-item"><a class="footer-site-link" href="#">Xizmatlar</a></li>
+          <li class="footer-link-item"><a class="footer-site-link" href="#">Dorilar</a></li>
+          <li class="footer-link-item"><a class="footer-site-link" href="#">Asal</a></li>
+          <li class="footer-link-item"><a class="footer-site-link" href="#">Kontaktlar</a></li>
+          <li class="footer-link-item"><a class="footer-site-link" href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+</footer>
 
 
 </body>
