@@ -151,6 +151,18 @@ body {
   color: #ffffff;
 }
 
+.hero-button:hover {
+  background-color: rgba(222, 46, 84, 0.8);
+  color: #ffffff;
+
+}
+
+.hero-button:active {
+  background: rgba(222, 46, 84, 0.6);
+  border-radius: 8px;
+
+}
+
 .hero-img {
   width: 423px;
   height: 555px;
@@ -273,6 +285,17 @@ background-color: #ffffff;
   font-size: 15px;
   letter-spacing: 2px;
   line-height: 18px;
+  transition: background-color 0.4s ease;
+}
+
+.call-button:hover {
+  background-color: #DE2E54;
+  border: 2px solid #DE2E54;
+  border-radius: 8px;
+}
+.call-button:active {
+  opacity: 0.6;
+
 }
 
 /* Footer sectioon styles */
@@ -314,4 +337,14 @@ background-color: #ffffff;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.footer-site-link:hover {
+  color: #DE2E54;
+}
+
+.footer-site-link:active {
+  color: #ffffff;
+  opacity: 0.6;
 }
