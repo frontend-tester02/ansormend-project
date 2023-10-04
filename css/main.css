@@ -189,17 +189,15 @@ body {
 
 /*  Service styles */
 
-.service-section {
-background-color: #ffffff;
-}
-
-.service-container {
+.services-section {
   padding-top: 120px;
   padding-bottom: 120px;
-  width: 864px;
+  background-color: #ffffff;
 }
+
 .services-title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 56px;
   text-align: center;
   color: #000000;
   font-weight: 700;
@@ -207,9 +205,14 @@ background-color: #ffffff;
   line-height: 43px;
 }
 
-.service-container {
-  padding-top: 56px;
-  padding-bottom: 72px;
+.services-list {
+  width: 864px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  list-style: none;
 }
 
 .services-item {
@@ -218,12 +221,19 @@ background-color: #ffffff;
   align-items: center;
 }
 
+.services-item:not(:last-child){
+  margin-bottom: 80px;
+}
+
 .service-img {
   margin-right: 64px;
 
 
 }
 
+.service-info {
+  flex-grow: 1;
+}
 .service-heading {
   margin: 0;
   margin-bottom: 24px;
@@ -235,12 +245,14 @@ background-color: #ffffff;
 
 .service-text {
   margin: 0;
-  font-family: 'Open sans' "Arial" sans-serif;
+  font-family: 'Open sans', "Arial" sans-serif;
   color: #444444;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
+
+
 
 
 .service-button {
@@ -378,6 +390,23 @@ background-color: #ffffff;
     width: 42%;
     height: auto;
   }
+
+  .services-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services-list {
+    width: 100%;
+  }
+
+  .service-img {
+    margin-right: 32px;
+  }
+
+
+
+
 }
 
 @media only screen and (max-width:800px) {
@@ -404,9 +433,56 @@ background-color: #ffffff;
 
 }
 
+@media only screen and (max-width:700px) {
+  .services-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
+
+  .services-item {
+    align-items: flex-start;
+  }
+
+  .services-title {
+    font-size: 24px;
+    margin-bottom: 44px;
+
+  }
+  .service-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 @media only screen and (max-width:550px) {
   .hero-img {
     width: 75%;
   }
+
+  .services-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+
+  .service-info {
+    width: 100%;
+
+  }
+
+  .service-img {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .service-text {
+    text-align: justify;
+  }
+
 
 }
