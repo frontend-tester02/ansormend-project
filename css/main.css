@@ -111,6 +111,7 @@ body {
   text-transform: uppercase;
   line-height: 150%;
   text-decoration: none;
+  text-align: center;
   transition: background-color 0.4s ease;
 }
 
@@ -129,10 +130,22 @@ body {
   border-radius: 8px;
 }
 
+.main-link-outline {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+
+}
+
+.main-link-outline:hover {
+  border-color: transparent;
+  background-color: #de2e54;
+  color: #fff;
+}
+
 /* Hero section  */
 
 .hero-section {
-
   background-color: #0EB4C1;
 }
 
@@ -256,75 +269,44 @@ body {
 
 
 .service-button {
- display: block;
- width: 237px;
- margin-left: auto;
- margin-right: auto;
- align-items: flex-start;
+  display: block;
+  width: 237px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
 
 
 }
 
+/* CTA */
 
-/* Footer section styles */
-
-.reception-section {
-  background-color: #0EB4C1;
-}
-
-.reception-title {
-  margin: 0;
+.cta {
   padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #0eb4c1;
+  color: #fff;
+  }
+
+.cta-heading {
+  margin-top: 0;
   margin-bottom: 40px;
-  text-align: center;
-  font-family: 'Open sans', 'Arial',  serif;
-  font-weight: 700;
   font-size: 36px;
-  line-height: 43px;
-  color: #ffffff;
+  line-height: 1.2;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  text-align: center;
 }
 
-.reception-buttons {
+.cta-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  list-style: none;
-  margin: 0;
-  padding-top: 40px;
-  padding-bottom: 64px;
 }
 
-.reception-buttons li {
+.cta-links-item:not(:last-child) {
   margin-right: 40px;
 }
 
-.reception-buttons li:last-child {
-  margin-right: 0;
-}
-
-.reception-button {
-  padding: 12px 24px;
-  border: 2px solid #ffffff;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #ffffff;
-  font-family: 'Open sans', 'Arial' sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 2px;
-  line-height: 18px;
-  transition: background-color 0.4s ease;
-}
-
-.call-button:hover {
-  background-color: #DE2E54;
-  border: 2px solid #DE2E54;
-  border-radius: 8px;
-}
-.call-button:active {
-  opacity: 0.6;
-
-}
 
 /* Footer sectioon styles */
 
@@ -453,6 +435,10 @@ body {
     width: 120px;
     height: 120px;
   }
+
+  .cta-heading {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width:550px) {
@@ -482,6 +468,20 @@ body {
 
   .service-text {
     text-align: justify;
+  }
+
+  .cta {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .cta-links {
+    flex-direction: column;
+  }
+
+  .cta-links-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 24px;
   }
 
 
