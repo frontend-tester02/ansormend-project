@@ -26,6 +26,7 @@ body {
 
 /* Site header */
 .site-header {
+  position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: #ffffff;
@@ -141,6 +142,10 @@ body {
   border-color: transparent;
   background-color: #de2e54;
   color: #fff;
+}
+
+.site-header-toggle-button {
+  display: none;
 }
 
 /* Hero section  */
@@ -357,6 +362,52 @@ body {
 
 /* RESPONSIVE */
 
+@media only screen and (max-width:1100px) {
+  .site-header-logo {
+    margin-right: auto;
+  }
+
+  .site-header-main-button {
+    margin-right: 24px;
+  }
+
+  .site-header-toggle-button {
+    display: block;
+    padding: 10px;
+    border: 1px solid #de2e54;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+  .site-header-sitenav {
+    display: none;
+  }
+
+  .site-header--open .site-header-sitenav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+
+  }
+
+  .site-header-sitenav .link-items {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0;
+  }
+
+  .site-header-sitenav .link-item {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+
+}
+
 @media only screen and (max-width:1000px) {
   .hero-content {
     padding-top: 60px;
@@ -387,6 +438,10 @@ body {
 }
 
 @media only screen and (max-width:900px) {
+  .site-header-main-button {
+    display: none;
+  }
+
   .footer-container {
     flex-direction: column;
   }
@@ -457,6 +512,15 @@ body {
 }
 
 @media only screen and (max-width:550px) {
+  .container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .site-header--open .site-header-sitenav {
+    padding: 22px;
+  }
+
   .hero-img {
     width: 75%;
   }
